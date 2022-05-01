@@ -29,7 +29,7 @@ def dls(node, limit):
                 dls(child, limit-1)
 
 # ---------------------------------------------
-def iterative_deepining(node, stop, step):
+def iterative_deepining(node, stop, step=1):
     for i in range(0, stop, step):
         dls(node, i)
         print(expanded)
@@ -37,4 +37,4 @@ def iterative_deepining(node, stop, step):
 
 
 print("----- Iterative  ------")
-iterative_deepining(1, 4, 1)
+iterative_deepining(1, 5, 1)
